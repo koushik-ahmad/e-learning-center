@@ -9,7 +9,6 @@ const Navbar = () => {
                     <a
                         href="/"
                         aria-label="Company"
-                        title="Company"
                         className="inline-flex items-center"
                     >
                         <svg
@@ -36,7 +35,7 @@ const Navbar = () => {
                             <a
                                 href="/home"
                                 aria-label="Our product"
-                                title="Our product"
+                                title="Home"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Home
@@ -46,7 +45,7 @@ const Navbar = () => {
                             <a
                                 href="/topics"
                                 aria-label="Our product"
-                                title="Our product"
+                                title="Topics"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Topics
@@ -56,7 +55,7 @@ const Navbar = () => {
                             <a
                                 href="/statistics"
                                 aria-label="Product pricing"
-                                title="Product pricing"
+                                title="Statistics"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Statistics
@@ -66,7 +65,7 @@ const Navbar = () => {
                             <a
                                 href="/blog"
                                 aria-label="About us"
-                                title="About us"
+                                title="Blog"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Blog
@@ -103,7 +102,6 @@ const Navbar = () => {
                                             <a
                                                 href="/"
                                                 aria-label="Company"
-                                                title="Company"
                                                 className="inline-flex items-center"
                                             >
                                                 <svg
@@ -148,7 +146,7 @@ const Navbar = () => {
                                                 <a
                                                     href="/home"
                                                     aria-label="Our product"
-                                                    title="Our product"
+                                                    title="Home"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
                                                     Home
@@ -158,7 +156,7 @@ const Navbar = () => {
                                                 <a
                                                     href="/topics"
                                                     aria-label="Our product"
-                                                    title="Our product"
+                                                    title="Topics"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
                                                     Topics
@@ -168,7 +166,7 @@ const Navbar = () => {
                                                 <a
                                                     href="/statistics"
                                                     aria-label="Product pricing"
-                                                    title="Product pricing"
+                                                    title="Statistics"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
                                                     Statistics
@@ -178,7 +176,7 @@ const Navbar = () => {
                                                 <a
                                                     href="/blog"
                                                     aria-label="About us"
-                                                    title="About us"
+                                                    title="Blog"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
                                                     Blog

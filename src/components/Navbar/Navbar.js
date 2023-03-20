@@ -34,7 +34,7 @@ const Navbar = () => {
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
                             <a
-                                href="/"
+                                href="/home"
                                 aria-label="Our product"
                                 title="Our product"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -44,7 +44,7 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a
-                                href="/"
+                                href="/topics"
                                 aria-label="Our product"
                                 title="Our product"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -54,7 +54,7 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a
-                                href="/"
+                                href="/statistics"
                                 aria-label="Product pricing"
                                 title="Product pricing"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -64,7 +64,7 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a
-                                href="/"
+                                href="/blog"
                                 aria-label="About us"
                                 title="About us"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -146,7 +146,7 @@ const Navbar = () => {
                                         <ul className="space-y-4">
                                             <li>
                                                 <a
-                                                    href="/"
+                                                    href="/home"
                                                     aria-label="Our product"
                                                     title="Our product"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -156,7 +156,7 @@ const Navbar = () => {
                                             </li>
                                             <li>
                                                 <a
-                                                    href="/"
+                                                    href="/topics"
                                                     aria-label="Our product"
                                                     title="Our product"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -166,7 +166,7 @@ const Navbar = () => {
                                             </li>
                                             <li>
                                                 <a
-                                                    href="/"
+                                                    href="/statistics"
                                                     aria-label="Product pricing"
                                                     title="Product pricing"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -176,7 +176,7 @@ const Navbar = () => {
                                             </li>
                                             <li>
                                                 <a
-                                                    href="/"
+                                                    href="/blog"
                                                     aria-label="About us"
                                                     title="About us"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"

@@ -11,20 +11,20 @@ const Statistics = () => {
     console.log(total);
     const data = [
         {
-            name: "Page A",
-            pv: 8
+            name: "Assignment 1",
+            mark: 8
         },
         {
-            name: "Page B",
-            pv: 9
+            name: "Assignment 2",
+            mark: 9
         },
         {
-            name: "Page C",
-            pv: 8
+            name: "Assignment 3",
+            mark: 8
         },
         {
-            name: "Page D",
-            pv: 11
+            name: "Assignment 4",
+            mark: 11
         },
     ];
     return (
@@ -49,7 +49,7 @@ const Statistics = () => {
                         <Tooltip />
                         <Legend />
                         <CartesianGrid strokeDasharray="3 3" />
-                        <Bar dataKey="pv" fill="#8884d8" background={{ fill: "#eee" }} />
+                        <Bar dataKey="mark" fill="#8884d8" background={{ fill: "#eee" }} />
                     </BarChart>
                 </ResponsiveContainer>
             </div>

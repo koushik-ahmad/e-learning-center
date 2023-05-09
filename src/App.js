@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './components/Blog/Blog';
+import Details from './components/Details/Details';
 import Error from './components/Error/Error';
 import Home from './components/Home/Home';
 import Main from './components/Main/Main';
@@ -24,12 +25,23 @@ function App() {
           path: '/home',
           element: <Home></Home>,
           loader: async () => {
-            return fetch('https://openapi.programming-hero.com/api/quiz');
+            return fetch(`https://openapi.programming-hero.com/api/quiz`);
           }
         },
         {
           path: '/topics',
-          element: <Topics></Topics>
+          element: <Topics></Topics>,
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz');
+          }
+        },
+        {
+          path: '/Details/:topicId',
+          element: <Details></Details>,
+          loader: async ({ params }) => {
+            console.log(params.topicId);
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`);
+          }
         },
         {
           path: '/statistics',

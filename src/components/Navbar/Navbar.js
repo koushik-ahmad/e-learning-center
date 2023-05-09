@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -6,8 +7,8 @@ const Navbar = () => {
         <div className="bg-indigo-500">
             <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                 <div className="relative flex items-center justify-between">
-                    <a
-                        href="/"
+                    <NavLink
+                        to="/"
                         aria-label="Company"
                         className="inline-flex items-center"
                     >
@@ -29,47 +30,47 @@ const Navbar = () => {
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 capitalize">
                             E-learning Center
                         </span>
-                    </a>
+                    </NavLink>
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
-                            <a
-                                href="/home"
+                            <NavLink
+                                to="/home"
                                 aria-label="Our product"
                                 title="Home"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Home
-                            </a>
+                            </NavLink>
                         </li>
                         <li>
-                            <a
-                                href="/topics"
+                            <NavLink
+                                to="/topics"
                                 aria-label="Our product"
                                 title="Topics"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Topics
-                            </a>
+                            </NavLink>
                         </li>
                         <li>
-                            <a
-                                href="/statistics"
+                            <NavLink
+                                to="/statistics"
                                 aria-label="Product pricing"
                                 title="Statistics"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Statistics
-                            </a>
+                            </NavLink>
                         </li>
                         <li>
-                            <a
-                                href="/blog"
+                            <NavLink
+                                to="/blog"
                                 aria-label="About us"
                                 title="Blog"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                             >
                                 Blog
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                     <div className="lg:hidden">
@@ -99,8 +100,8 @@ const Navbar = () => {
                                 <div className="p-5 bg-white border rounded shadow-sm">
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
-                                            <a
-                                                href="/"
+                                            <NavLink
+                                                to="/"
                                                 aria-label="Company"
                                                 className="inline-flex items-center"
                                             >
@@ -122,7 +123,7 @@ const Navbar = () => {
                                                 <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 capitalize">
                                                     E-learning Center
                                                 </span>
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div>
                                             <button
@@ -143,44 +144,44 @@ const Navbar = () => {
                                     <nav>
                                         <ul className="space-y-4">
                                             <li>
-                                                <a
-                                                    href="/home"
+                                                <NavLink
+                                                    to="/home"
                                                     aria-label="Our product"
                                                     title="Home"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
                                                     Home
-                                                </a>
+                                                </NavLink>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="/topics"
+                                                <NavLink
+                                                    to="/topics"
                                                     aria-label="Our product"
                                                     title="Topics"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
                                                     Topics
-                                                </a>
+                                                </NavLink>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="/statistics"
+                                                <NavLink
+                                                    to="/statistics"
                                                     aria-label="Product pricing"
                                                     title="Statistics"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
                                                     Statistics
-                                                </a>
+                                                </NavLink>
                                             </li>
                                             <li>
-                                                <a
-                                                    href="/blog"
+                                                <NavLink
+                                                    to="/blog"
                                                     aria-label="About us"
                                                     title="Blog"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
                                                     Blog
-                                                </a>
+                                                </NavLink>
                                             </li>
                                         </ul>
                                     </nav>

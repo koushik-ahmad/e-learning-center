@@ -1,11 +1,17 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { NavLink, useLoaderData } from 'react-router-dom';
 import Cart from '../Cart/Cart';
 
 const Home = () => {
     const homeData = useLoaderData();
     const home = homeData.data;
-    console.log(home);
+    // console.log(home);
+
+    const handleClick = (id) => {
+        console.log(id);
+    }
+
+
     return (
         <div>
             <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -31,8 +37,8 @@ const Home = () => {
                             </p>
                         </div>
                         <div className="flex flex-col items-center md:flex-row">
-                            <a
-                                href="/"
+                            <NavLink
+                                to="/"
                                 className="bg-indigo-500 inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                             >
                                 <span className="mr-3">Start learning</span>
@@ -76,14 +82,14 @@ const Home = () => {
                                         points="1,1 4,4 4,14 2,18 23,18 "
                                     />
                                 </svg>
-                            </a>
-                            <a
-                                href="/"
+                            </NavLink>
+                            <NavLink
+                                to="/"
                                 aria-label=""
                                 className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
                             >
                                 Course details
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                     <div className="relative lg:w-1/2">
@@ -100,6 +106,7 @@ const Home = () => {
                     home.map(cart => <Cart
                         key={cart.id}
                         cart={cart}
+                        handleClick={handleClick}
                     ></Cart>)
                 }
             </div>
